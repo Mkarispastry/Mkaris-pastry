@@ -101,9 +101,24 @@ main {
     display: block;
 }
 
+.active-category {
+    background-color: #d4d4d4; /* Light gray background */
+    color: #991e08;           /* Black text for contrast */
+    font-weight: bold;        /* Optional: Make the text bold */
+    border-radius: 3px;       /* Optional: Add rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
 .category-bar ul li a:hover {
     background-color: #d4d4d4;
     font-weight: bold;
+}
+.category-bar ul li a.default-active {
+    background-color: #d4d4d4; /* Light gray background */
+    color: #991e08;           /* Black text for contrast */
+    font-weight: bold;        /* Optional: Make the text bold */
+    border-radius: 3px;       /* Optional: Add rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
 }
 
 
