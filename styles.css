@@ -1,0 +1,210 @@
+/* Base Styles (Mobile First) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #991e08;
+}
+
+
+header {
+    background: #991e08;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    position: relative;
+    
+}
+/* WhatsApp Button Styling */
+.whatsapp-button {
+    position: fixed; /* Fixed position on the screen */
+    bottom: 20px; /* Distance from the bottom */
+    right: 20px; /* Distance from the right */
+    background-color: #ffffff; /* WhatsApp green color */
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none; /* Remove underline from the link */
+}
+
+.whatsapp-icon {
+    width: 30px; /* Icon size */
+    height: 30px;
+}
+
+/* Hover effect */
+.whatsapp-button:hover {
+    background-color: #1ebe57;
+}
+
+/* Instagram Button Styling */
+.instagram-icon {
+    position: absolute; /* Position relative to the nearest positioned ancestor */
+    top: 20px; /* Distance from the top */
+    right: 20px; /* Distance from the right */
+    
+    color: white; /* Icon color */
+    border-radius: 50%;
+    width: 60px; /* Button size */
+    height: 60px; /* Button size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    text-decoration: none; /* Remove underline */
+    font-size: 28px; /* Icon size */
+}
+
+
+header img {
+    display: block;
+    margin: 0 auto;
+    max-width: 250px; 
+    height: 300px;
+}
+
+main {
+    
+    text-align: center;
+}
+.category-bar {
+    background-color: #ffffff;
+    color: #991e08;
+    padding: 5px 0;
+    overflow-x: auto;  /* Enable horizontal scrolling */
+    white-space: nowrap;  /* Prevent wrapping of items */
+}
+
+.category-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;  /* Use inline-flex for horizontal layout */
+}
+
+.category-bar ul li {
+    display: inline-block;
+}
+
+.category-bar ul li a {
+    color: #991e08;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+    display: block;
+}
+
+.category-bar ul li a:hover {
+    background-color: #d4d4d4;
+    font-weight: bold;
+}
+
+
+/* Style for the product items */
+.product-item {
+    margin-top: 10px;
+    padding: 5px;
+    display: flex;
+    align-items: flex-start; /* Align the image and text vertically */
+    margin-bottom: 20px; /* Add space between products */
+}
+
+.product-image {
+    width: 100px;  /* Set image width */
+    height: 130px;  /* Maintain aspect ratio */
+    display: block;
+}
+
+.product-info {
+    margin-top: 30px;
+    margin-left: 10px;
+    text-align: left;
+    display: flex;
+    flex-direction: column; /* Stack name, description, and price vertically */
+}
+
+.product-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0;
+    color: #ffffff;
+}
+
+.product-description {
+    font-size: 1em;
+    margin: 5px 0;
+    color: #ffffff;
+}
+
+.product-price {
+    font-size: 1.1em;
+    color: #ffffff;
+    margin-top: 10px; /* Add space between description and price */
+}
+
+
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Buttons */
+button {
+    display: block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    margin: 1rem auto;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+}
+#category1 {
+    display: block; /* Show Category 1 content by default */
+}
+
+/* Media Queries */
+
+/* Tablets */
+@media (min-width: 600px) {
+    header {
+        padding: 3rem 0;
+    }
+
+    main {
+        max-width: 720px;
+        margin: 0 auto;
+    }
+
+    footer {
+        padding: 1.5rem 0;
+    }
+}
+
+/* Laptops and Desktops */
+@media (min-width: 1024px) {
+    body {
+        font-size: 1.2rem;
+    }
+
+    header {
+        padding: 4rem 0;
+    }
+
+    main {
+        max-width: 960px;
+    }
+}
